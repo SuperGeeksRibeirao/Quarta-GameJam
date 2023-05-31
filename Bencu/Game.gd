@@ -9,5 +9,5 @@ func _ready():
 func spawn_ball():
 	if ball_instance != null:
 		remove_child(ball_instance)
-	ball_instance = ball_scene.instance()
+		ball_instance = ball_scene.instance()
 	add_child(ball_instance)
