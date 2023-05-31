@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/normal.png-98385318a88c278fa0341d8e8db91491.stex"
+path="res://.import/deformação batida na barra esquerda.png-1e19310dfb1b5b5209037d50710f28b7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://vinicius/normal.png"
-dest_files=[ "res://.import/normal.png-98385318a88c278fa0341d8e8db91491.stex" ]
+source_file="res://vinicius/BALA-CAFÉ OU CHOCOLATE/deformação batida na barra esquerda.png"
+dest_files=[ "res://.import/deformação batida na barra esquerda.png-1e19310dfb1b5b5209037d50710f28b7.stex" ]
 
 [params]
 

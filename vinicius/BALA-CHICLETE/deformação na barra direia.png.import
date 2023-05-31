@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/deformação batida na barra esquerda.png-eede2dda4c1a36199444f1affc05fd68.stex"
+path="res://.import/deformação na barra direia.png-f3bda4b6edba907cdb128787973bc1f3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://vinicius/deformação batida na barra esquerda.png"
-dest_files=[ "res://.import/deformação batida na barra esquerda.png-eede2dda4c1a36199444f1affc05fd68.stex" ]
+source_file="res://vinicius/BALA-CHICLETE/deformação na barra direia.png"
+dest_files=[ "res://.import/deformação na barra direia.png-f3bda4b6edba907cdb128787973bc1f3.stex" ]
 
 [params]
 

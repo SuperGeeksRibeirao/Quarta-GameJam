@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/deformação barra direita.png-73c8cfcebfb53fc3a34fb0ad0a6c92a3.stex"
+path="res://.import/deformação barra direita.png-bace9e7fc584b9a2c53eac9debda4ee3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://vinicius/deformação barra direita.png"
-dest_files=[ "res://.import/deformação barra direita.png-73c8cfcebfb53fc3a34fb0ad0a6c92a3.stex" ]
+source_file="res://vinicius/BALA-CAFÉ OU CHOCOLATE/deformação barra direita.png"
+dest_files=[ "res://.import/deformação barra direita.png-bace9e7fc584b9a2c53eac9debda4ee3.stex" ]
 
 [params]
 
