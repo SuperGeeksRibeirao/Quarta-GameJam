@@ -11,6 +11,7 @@ config_version=4
 [application]
 
 config/name="Quarta- Game Jam"
+run/main_scene="res://Bencu/Game.tscn"
 config/icon="res://icon.png"
 
 [physics]
@@ -19,4 +20,4 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
-environment/default_environment="res://default_env.tres"
+environment/default_environment="res://Bencu/default_env.tres"
