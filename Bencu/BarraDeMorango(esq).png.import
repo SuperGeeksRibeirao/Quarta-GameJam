@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/BarraDeMorango(esq).png-ab42ea0247f78dd073ce6a4106a2b153.stex"
+path="res://.import/BarraDeMorango(esq).png-ebffd58d967f0101652b78818d52303e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enzo/BarraDeMorango(esq).png"
-dest_files=[ "res://.import/BarraDeMorango(esq).png-ab42ea0247f78dd073ce6a4106a2b153.stex" ]
+source_file="res://Bencu/BarraDeMorango(esq).png"
+dest_files=[ "res://.import/BarraDeMorango(esq).png-ebffd58d967f0101652b78818d52303e.stex" ]
 
 [params]
 
