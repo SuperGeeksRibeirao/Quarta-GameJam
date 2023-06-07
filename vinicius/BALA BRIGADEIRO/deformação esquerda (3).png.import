@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/BarraDeChocolate(dir).png-3d16dc7495a64338203ea077a4303e81.stex"
+path="res://.import/deformação esquerda (3).png-3c324abca8a1e388e6fc19ebbf44dc7a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enzo/BarraDeChocolate(dir).png"
-dest_files=[ "res://.import/BarraDeChocolate(dir).png-3d16dc7495a64338203ea077a4303e81.stex" ]
+source_file="res://vinicius/BALA BRIGADEIRO/deformação esquerda (3).png"
+dest_files=[ "res://.import/deformação esquerda (3).png-3c324abca8a1e388e6fc19ebbf44dc7a.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
