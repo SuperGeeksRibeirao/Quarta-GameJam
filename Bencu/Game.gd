@@ -1,5 +1,5 @@
 extends Node2D
-
+var points = 0
 var ball_scene = preload("res://Bencu/ball.gd")
 var ball_instance = null
 
@@ -11,3 +11,4 @@ func spawn_ball():
 		remove_child(ball_instance)
 		ball_instance = ball_scene.instance()
 	add_child(ball_instance)
+
