@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/BotaoPlay.png-59f3c08037bd9c8b1719ee384c291b1f.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Bencu/BotaoPlay.png"
+dest_files=[ "res://.import/BotaoPlay.png-59f3c08037bd9c8b1719ee384c291b1f.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
