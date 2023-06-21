@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://vinicius/BALA-CHICLETE/sem deformação.png" type="Texture" id=1]
 [ext_resource path="res://Bencu/BarraDeMorango(esq).png" type="Texture" id=2]
 [ext_resource path="res://rafa/boula.gd" type="Script" id=3]
+[ext_resource path="res://rafa/ponto2.gd" type="Script" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 43.5, 135.5 )
@@ -21,22 +22,37 @@ extents = Vector2( 1535.5, 5 )
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 8592, 6 )
 
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 10, 518.25 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 24.1875, 553 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 1040, 18.5 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 1036.34, 16 )
+
 [node name="Node2D" type="Node2D"]
 
 [node name="player" type="KinematicBody2D" parent="."]
-position = Vector2( 56, 17 )
+position = Vector2( 42, 131 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
 position = Vector2( 16.5, 323.5 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="player"]
-position = Vector2( 15.625, 324 )
+position = Vector2( 16, 323 )
 scale = Vector2( 2.07857, 3.64286 )
 texture = ExtResource( 2 )
 
 [node name="boula" type="Area2D" parent="."]
-position = Vector2( 435, 313 )
+position = Vector2( 759, 591 )
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
@@ -55,11 +71,47 @@ frames = SubResource( 2 )
 [node name="parede" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="parede"]
-position = Vector2( 1525.5, 0 )
+position = Vector2( 1527, 0 )
 shape = SubResource( 3 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="parede"]
-position = Vector2( 8587, 604 )
+position = Vector2( 8594, 990 )
 shape = SubResource( 4 )
 
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -1, 514 )
+shape = SubResource( 5 )
+
+[node name="Area2D2" type="Area2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2( 1952, 504 )
+shape = SubResource( 5 )
+script = ExtResource( 4 )
+
+[node name="Area2D4" type="Area2D" parent="."]
+position = Vector2( -7, -36 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D4"]
+position = Vector2( -36, 539 )
+shape = SubResource( 6 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D4"]
+position = Vector2( 979, 6.5 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Area2D4"]
+position = Vector2( 973.664, 1062 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Area2D4"]
+position = Vector2( 2007, 541 )
+shape = SubResource( 6 )
+
 [connection signal="body_entered" from="boula" to="boula" method="_on_boula_body_entered"]
+[connection signal="area_entered" from="Area2D" to="boula" method="_on_Area2D_area_entered"]
+[connection signal="area_entered" from="Area2D" to="Area2D2/CollisionShape2D2" method="_on_Area2D_area_entered"]
+[connection signal="area_entered" from="Area2D2" to="boula" method="_on_Area2D2_area_entered"]
+[connection signal="area_entered" from="Area2D4" to="boula" method="_on_Area2D4_area_entered"]
