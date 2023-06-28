@@ -1,11 +1,11 @@
 extends KinematicBody2D
 
-export var speed = 400
+var speed = 400
 
 func _physics_process(delta):
 	var velocity = Vector2()
-	if Input.is_action_pressed("ui_up"):
+	if Input.is_key_pressed(KEY_W):
 		velocity.y -= speed
-	if Input.is_action_pressed("ui_down"):
+	if Input.is_key_pressed(KEY_S):
 		velocity.y += speed
 	velocity = move_and_slide(velocity, Vector2(0, -1))

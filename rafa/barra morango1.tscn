@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://rafa/barra morango.gd" type="Script" id=1]
 [ext_resource path="res://Bencu/BarraDeMorango(esq).png" type="Texture" id=2]
+[ext_resource path="res://rafa/barra morango2.gd" type="Script" id=3]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -14,13 +15,35 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 18, 35 )
 
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 17.5, 35 )
+
 [node name="barra morango1" type="Node2D"]
 
 [node name="barra morango" type="KinematicBody2D" parent="."]
+position = Vector2( 33, 228 )
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="barra morango"]
 frames = SubResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="barra morango"]
+position = Vector2( -1, 0 )
 shape = SubResource( 2 )
+
+[node name="barra morango2" type="KinematicBody2D" parent="."]
+position = Vector2( 1639, 246 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="barra morango2"]
+frames = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="barra morango2"]
+position = Vector2( 0.5, 0 )
+shape = SubResource( 3 )

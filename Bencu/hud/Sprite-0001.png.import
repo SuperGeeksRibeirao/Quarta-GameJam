@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/BotaoPlay.png-f82653fa3e97840f2aa695441db000c4.stex"
+path="res://.import/Sprite-0001.png-992f3be3d4eaadc0f683b64c6126c290.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enzo/BotaoPlay.png"
-dest_files=[ "res://.import/BotaoPlay.png-f82653fa3e97840f2aa695441db000c4.stex" ]
+source_file="res://Bencu/hud/Sprite-0001.png"
+dest_files=[ "res://.import/Sprite-0001.png-992f3be3d4eaadc0f683b64c6126c290.stex" ]
 
 [params]
 
