@@ -1,5 +1,5 @@
 extends Area2D
-var speed = Vector2(0,350)
+var speed = Vector2(0,375)
 var random = RandomNumberGenerator.new()
 var PontoPlayer1 = 0
 var PontoPlayer2 = 0
@@ -14,7 +14,7 @@ func _physics_process(delta):
 
 
 func _on_boula_body_entered(body):
-	if body.name == 'parede' or "player":
+	if body.name == 'parede' or "player" or 'player2':
 		rotation = rotation
 		speed = -speed
 		rotation_degrees += rand_range(0,90)
